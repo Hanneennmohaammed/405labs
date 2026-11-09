@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like and Dislike Page</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f9;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .container {
+        background-color: white;
+        max-width: 500px;
+        margin: auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px #ddd;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    button {
+        padding: 12px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    #likeBtn {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    #dislikeBtn {
+        background-color: #f44336;
+        color: white;
+    }
+
+    #submitBtn {
+        background-color: #2196F3;
+        color: white;
+    }
+
+    #resetBtn {
+        background-color: #777;
+        color: white;
+    }
+
+    button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    input {
+        width: 80%;
+        padding: 12px;
+        margin-top: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    #commentsSection {
+        margin-top: 20px;
+        text-align: left;
+        overflow-wrap: anywhere;
+    }
+
+    .comment {
+        background-color: #eee;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    #message {
+        color: #333;
+        font-weight: bold;
+    }
+</style>
+
+<div class="container">
+
+
+     <h1>Lab 6</h1>
+
+    <h1>Like or Dislike</h1>
+
+
+    <button id="likeBtn">Like </button>
+    <span id="likeCount"></span>
+
+    <button id="dislikeBtn">Dislike </button>
+    <span id="dislikeCount"></span>
+
+    <hr>
+
+    <h2>Comments</h2>
+
+    <input type="text"
+           id="commentInput"
+           placeholder="Write your comment">
+
+    <br>
+
+    <button id="submitBtn">Submit</button>
+
+
+    <div id="commentsSection"></div>
+
+    <p id="message"></p>
+
+    <button id="resetBtn">Clear</button>
+
+</div>
+
+<script src="lab6.js"></script>

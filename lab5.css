@@ -1,0 +1,65 @@
+body{
+    width: 60%;
+    margin: 30px auto;
+  }
+  span.desc::after{
+    content: " \25B2";
+  }
+  span.asc::after{
+    content: " \25BC"
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+
+body.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode table {
+    color: white;
+}
+
+.dark-mode th {
+    background-color: #2e7d32;
+}
+
+.dark-mode tbody tr {
+    background-color: #333;
+}
+
+.dark-mode tbody tr:nth-child(even) {
+    background-color: #444;
+}
+
+.dark-mode tbody tr:hover {
+    background-color: #555;
+}
+
+.dark-mode input,
+.dark-mode button {
+    background-color: #444;
+    color: white;
+    border: 1px solid #777;
+}
